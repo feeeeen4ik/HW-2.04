@@ -21,11 +21,8 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
         
         viewOutlet.layer.cornerRadius = 10
-        redLabelOutlet.text = String(format: "%5.2f", redSliderOutlet.value)
-        greenLabelOutlet.text = String(format: "%5.2f", greenSliderOutlet.value)
-        blueLabelOutlet.text = String(format: "%5.2f", blueSliderOutlet.value)
-        changeColorOnView()
         setupSliders()
+        changeColorOnView()
     }
     
     @IBAction func redSliderAction () {
@@ -46,17 +43,17 @@ final class ViewController: UIViewController {
     private func setupSliders() {
         redSliderOutlet.minimumValue = 0
         redSliderOutlet.maximumValue = 1
-        redSliderOutlet.value = 0.5
+        redSliderOutlet.value = Float.random(in: 0...1.0)
         redSliderOutlet.minimumTrackTintColor = .red
         
         greenSliderOutlet.minimumValue = 0
         greenSliderOutlet.maximumValue = 1
-        greenSliderOutlet.value = 0.5
+        greenSliderOutlet.value = Float.random(in: 0...1.0)
         greenSliderOutlet.minimumTrackTintColor = .green
         
         blueSliderOutlet.minimumValue = 0
         blueSliderOutlet.maximumValue = 1
-        blueSliderOutlet.value = 0.5
+        blueSliderOutlet.value = Float.random(in: 0...1.0)
         blueSliderOutlet.minimumTrackTintColor = .blue
         
     }
@@ -68,6 +65,10 @@ final class ViewController: UIViewController {
             blue: CGFloat(blueSliderOutlet.value),
             alpha: 1
         )
+        
+        redLabelOutlet.text = String(format: "%5.2f", redSliderOutlet.value)
+        greenLabelOutlet.text = String(format: "%5.2f", greenSliderOutlet.value)
+        blueLabelOutlet.text = String(format: "%5.2f", blueSliderOutlet.value)
     }
 
 
