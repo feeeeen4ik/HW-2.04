@@ -14,7 +14,7 @@
 		253718612CD1696200F91F62 /* Exceptions for "HW 2.04" folder in "HW 2.04" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				App/Info.plist,
 			);
 			target = 2537184E2CD1695F00F91F62 /* HW 2.04 */;
 		};
@@ -147,7 +147,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2YV4FKPX66;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "HW 2.04/Info.plist";
+				INFOPLIST_FILE = "HW 2.04/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -179,7 +179,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2YV4FKPX66;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "HW 2.04/Info.plist";
+				INFOPLIST_FILE = "HW 2.04/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
